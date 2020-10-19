@@ -1,34 +1,351 @@
-<!DOCTYPE html>
+<!--DOCTYPE html-->
 <html lang="en">
 <head>
+	<meta charset="utf-8">
 	<title>Johnson Qu</title>
 	<style>
+		/* Whole site */
 		h1{
-			color: rgb(83, 64, 230);
-			font-family: Open Sans, sans-serif;
-			font-size: 3em;
-		}
+            font-family: Open Sans, sans-serif;
+            font-variant: small-caps;
+            font-size: 7em;
+            color: rgb(22, 121, 227);
+            font-weight: 600;
+            margin-top: 0px;
+            margin-bottom: 20px;
+        }
 		h2{
 			font-family: Open Sans, sans-serif;
-			font-size: 2em;
+			font-size: 4em;
+			margin-top: 0px;
+			margin-bottom: 0px;
 		}
 		h3{
 			font-family: Open Sans, sans-serif;
+			font-size: 2em;
+			margin-top: 0px;
+			margin-bottom: 0px;
+		}
+		h4{
+			font-family: Open Sans, sans-serif;
 			font-size: 1.5em;
+			margin-top: 0px;
+			margin-bottom: 0px;
+		}
+		h5{
+			font-family: Open Sans, sans-serif;
+			font-size: 1.2em;
+			font-style: italic;
+			margin-top: 0px;
+			margin-bottom: 0px;
 		}
 		p{
 			font-family: Arial, sans-serif;
 			font-size: 20px;
 		}
+		li{
+			font-family: Arial, sans-serif;
+			font-size: 20px;
+		}
+		.section{
+			margin: 20px;
+			border: 10px solid red;
+			padding: 15px;
+		}
+		.section-item{
+			margin: 20px;
+			border: 10px solid blue;
+			padding: 15px;
+		}
+
+		/* Headline section */
+		#headline{
+			position: relative;
+			top: 0px;
+			left: 0px;
+			border: 10px solid red;
+			display: block;
+			height: 100%;
+			overflow: hidden;
+			margin: 0px;
+		}
+		#headline-background{
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			z-index: 1;
+		}
+		#headline-profilePic{
+			position: absolute;
+			top: 500px;
+			left: 10%;
+			z-index: 2;
+		}
+		#headline-name{
+			position: absolute;
+			top: 550px;
+			left: 40%;
+			z-index: 2;
+			width: 900px;
+			background-color: rgba(0,0,0,0.7);
+			margin: 30px;
+			border: 4px solid white;
+			padding: 50px;
+		}
+		#headline-name-headline{
+			color: white;
+			font-size: 30px;
+			margin-bottom: 0px;
+		}
+
+		/* What section */
+		#what{
+			position: relative;
+			top: 0px;
+			left: 0px;
+			margin-top: 50px;
+			border: 10px solid red;
+			padding: 15px;
+		}
+		#elevator-1{
+			position: relative;
+			top: 100%;
+			text-align: center;
+			margin: 20px;
+			border: 10px solid red;
+			padding: 15px;
+			float: right;
+			width: 30%;
+		}
 	</style>
 </head>
 <body>
-	<p>NOTE: The h3's are the actual headings. The h2's will either be bubbles off to the side like the elevator pitch or not even included.</p>
-	<p>NOTE: test text</p>
-	<h1>Johnson Qu</h1>
-	<!-- insert image here -->
-	<p>Headline: Mechatronics Engineering Student passionate about Vehicles, Control systems, and Embedded Systems</p>
+	<!-- First section -->
+	<div id="headline">
+		<div id="headline-name">
+			<h1>Johnson Qu</h1>
+			<p id="headline-name-headline">Mechatronics Engineering Student passionate about Vehicles, Control systems, and Embedded Systems</p>
+		</div>
 
+		<img id="headline-profilePic" src="img/profileCircle.png" width=500px>
+		<img id="headline-background" src="img/background.jpg" width=100%>
+	</div>
+
+	<!-- Resume section -->
+	<div class="section">
+		<p>Download my resume</p>
+	</div>
+
+	<!-- What section -->
+	<div id="what">
+		<div id="elevator-1">
+			<p>This is the first sentence of my elevator pitch</p>
+		</div>
+		
+		<!-- Education section -->
+		<div class="section">
+			<h2>Education</h2>
+			<h3>Bachelor of Engineering, Mechatronics Engineering, Level III</h3>
+			<h4>McMaster University</h4>
+			<p>cGPA: 3.96/4.00</p>
+			<h4>Courses</h4>
+			<ul>
+				<li>Course 1</li>
+				<li>Course 2</li>
+				<li>Course 3</li>
+				<li>Course 4</li>
+				<li>Course 5</li>
+				<li>Course 6</li>
+			</ul>
+			<h4>Honours and Awards</h4>
+			<ul>
+				<li>Award 1</li>
+				<li>Award 2</li>
+				<li>Award 3</li>
+				<li>Award 4</li>
+				<li>Award 5</li>
+				<li>Award 6</li>
+			</ul>
+		</div>
+
+		<!-- Experience Section -->
+		<div class="section">
+			<h2>Experience</h2>
+
+			<div class="section-item">
+				<h3>Vehicle Dynamics Control System Co-op</h3>
+				<h4>General Motors Canada</h4>
+				<h5>September 2020 - April 2021</h5>
+				<p>Testing and developing algorithms using Matlab and Simulink for Advanced Chassis Control to maintain vehicle stability while maximizing performance.</p>
+			</div>
+
+			<div class="section-item">
+				<h3>Driver Controls Subteam Member</h3>
+				<h4>McMaster Baja Racing</h4>
+				<h5>September 2018 - Present</h5>
+				<p>Researching, designing, manufacturing, and assembling driver-controls related systems to produce a single seat off road vehicle, part of the Baja SAE competition.</p>
+			</div>
+
+			<div class="section-item">
+				<h3>Logistics Executive</h3>
+				<h4>DeltaHacks</h4>
+				<h5>June 2020 - Present</h5>
+				<p>Working with all things Logistics to deliver a successful online Hackathon. Swag, prizes and shipping.</p>
+			</div>
+
+			<div class="section-item">
+				<h3>Educational Research Assistant</h3>
+				<h4>McMaster University</h4>
+				<h5>May 2020 - August 2021</h5>
+				<p>Developed lab components of two Embedded Systems courses to prepare them for online delivery, including a remote FPGA access system.</p>
+			</div>
+
+			<div class="section-item">
+				<h3>Summer Electrical Assistant</h3>
+				<h4>ATS Test</h4>
+				<h5>May 2020 - June 2021</h5>
+				<p>Kitted parts, soldered PCBs, and tested hardware.</p>
+			</div>
+
+			<div class="section-item">
+				<h3>Systems Integrator</h3>
+				<h4>ATS Automation</h4>
+				<h5>May 2019 - August 2019</h5>
+				<p>Worked with PLCs, HMIs and other industrial automation devices to setup and troubleshoot issues for medical automation lines.</p>
+			</div>
+
+			<div class="section-item">
+				<h3>Systems Integrator</h3>
+				<h4>ATS Automation</h4>
+				<h5>May 2018 - August 2018</h5>
+				<p>Worked with PLCs, HMIs and other industrial automation devices to setup and troubleshoot issues for packaging machines.</p>
+			</div>
+		</div>
+
+		<!-- Projects Section -->
+		<div class="section">
+			<h2>Projects</h2>
+
+			<div class="section-item">
+				<h3>Custom Master Cylinders</h3>
+				<h4></h4>
+				<h5></h5>
+				<p></p>
+			</div>
+
+			<div class="section-item">
+				<h3>Throttle Pedal</h3>
+				<h4></h4>
+				<h5></h5>
+				<p></p>
+			</div>
+
+			<div class="section-item">
+				<h3>Remote FPGA</h3>
+				<h4></h4>
+				<h5></h5>
+				<p></p>
+			</div>
+
+			<div class="section-item">
+				<h3>Pacemaker</h3>
+				<h4></h4>
+				<h5></h5>
+				<p></p>
+			</div>
+
+			<div class="section-item">
+				<h3>Website</h3>
+				<h4></h4>
+				<h5></h5>
+				<p></p>
+			</div>
+
+			<div class="section-item">
+				<h3>Hydra</h3>
+				<h4></h4>
+				<h5></h5>
+				<p></p>
+			</div>
+
+			<div class="section-item">
+				<h3>Efficity</h3>
+				<h4></h4>
+				<h5></h5>
+				<p></p>
+			</div>
+
+			<div class="section-item">
+				<h3>Sumobot</h3>
+				<h4></h4>
+				<h5></h5>
+				<p></p>
+			</div>
+
+			<div class="section-item">
+				<h3>Joystick Robot</h3>
+				<h4></h4>
+				<h5></h5>
+				<p></p>
+			</div>
+		</div>
+
+		<!-- Volunteering Section -->
+		<div class="section">
+			<h2>Volunteering</h2>
+
+			<div class="section-item">
+				<h3>Welcome Week Representative</h3>
+				<h4>McMaster Engineering Society</h4>
+				<h5>May 2020 - Present</h5>
+				<p>Represented the Engineering Society and worked to ensure First Years successfully transitioned from high-school into university.</p>
+			</div>
+
+			<div class="section-item">
+				<h3>Mentor</h3>
+				<h4>McMaster Engineering Society</h4>
+				<h5>September 2019 - Present</h5>
+				<p>Assist mentee transition from high-school to university and provide them with academic, career and social advice when appropriate.</p>
+			</div>
+
+			<div class="section-item">
+				<h3>Merchandise Coordinator</h3>
+				<h4>McMaster Mechatronics Society</h4>
+				<h5>September 2020 - Present</h5>
+				<p>Responsible for all things merch. Design, contests, procurement and selling.</p>
+			</div>
+
+			<div class="section-item">
+				<h3>Social Committee Member</h3>
+				<h4>McMaster Engineering Society</h4>
+				<h5>September 2020 - Present</h5>
+				<p>Ensure all students are able to have fun by providing feedback and  insight about potential events, and assisting events</p>
+			</div>
+
+			<div class="section-item">
+				<h3>Learn Twice Initiative</h3>
+				<h4>SAE Twice Initiative</h4>
+				<h5>February 2020</h5>
+				<p>Gave STEM (Science, Technology, Engineering, and Math) related lessons to students in grades 1-8 with hands-on activities.</p>
+			</div>
+
+			<div class="section-item">
+				<h3>Fall Preview Clubs & Teams Representative</h3>
+				<h4>Faculty of Engineering, McMaster University</h4>
+				<h5>February 2020</h5>
+				<p>Met and chatted with high school students interested in pursuing Engineering, answering questions about the Baja Racing team, academics, school resources, residence & off campus life, and student life.</p>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+<!--
 	<h2>Who</h2>
 	<h3>About</h3>
 	<p>Put personal-professional stuff about me here. This is a section for branding</p>
@@ -70,5 +387,6 @@
 	<h2>Coffee Chat</h2>
 	<p>Form to get in touch + links</p>
 	<p>Seventh line of my elevator pitch in a quote on the side</p>
+-->
 	</body>
 </html>
