@@ -49,6 +49,14 @@
 			font-size: 20px;
 			line-height: 1.5em;
 		}
+		.w5h1{
+			position: relative;
+			top: 0px;
+			left: 0px;
+			margin-top: 50px;
+			border: 10px solid pink;
+			padding: 15px;
+		}
 		.section{
 			margin: 20px;
 			border: 10px solid pink;
@@ -106,14 +114,14 @@
 		}
 
 		/* What section */
-		#what{
+		/*#what{
 			position: relative;
 			top: 0px;
 			left: 0px;
 			margin-top: 50px;
 			border: 10px solid pink;
 			padding: 15px;
-		}
+		}*/
 		#elevator{
 			position: relative;
 			top: 100%;
@@ -124,10 +132,60 @@
 			float: right;
 			width: 30%;
 		}
+
+		/* Menu Bar */
+		#menu-bar{
+			margin: auto;
+			position: fixed;
+			border: 10px solid rgb(253,213,177);
+			padding: 15px;
+			z-index: 3;
+			background-color: rgb(255,255,255);
+			width: 100%;
+			text-align: center;
+		}
+		.menu-bar-item{
+			margin: 0 auto;/*
+			border-left: 2px solid rgb(0,0,0);*/
+			padding: 10px;
+			font-family: Open Sans, sans-serif;
+			font-size: 1.5em;
+			display: inline-block;
+			padding-top: 200px;
+		    margin-top: -200px;
+		}
 	</style>
 </head>
 <body>
-	<!-- First section -->
+	<!-- Menu Bar -->
+	<div id="menu-bar">
+		<span class="menu-bar-item">
+			<a href="#temp-section">Temporary Section</a>
+		</span>
+		<span class="menu-bar-item">
+			<a href="#about-section">About</a>
+		</span>
+		<span class="menu-bar-item">
+			<a href="#resume-section">Resume</a>
+		</span>
+		<span class="menu-bar-item">
+			<a href="#education-section">Education</a>
+		</span>
+		<span class="menu-bar-item">
+			<a href="#experience-section">Experience</a>
+		</span>
+		<span class="menu-bar-item">
+			<a href="#projects-section">Projects</a>
+		</span>
+		<span class="menu-bar-item">
+			<a href="#volunteering-section">Volunteering</a>
+		</span>
+		<span class="menu-bar-item">
+			<a href="#connect-section">Connect</a>
+		</span>
+	</div>
+
+	<!-- Who section -->
 	<div id="headline">
 		<div id="headline-name">
 			<h1>Johnson Qu</h1>
@@ -138,20 +196,36 @@
 		<img id="headline-background" src="img/background.jpg" width=100%>
 	</div>
 
+	<!-- Temp section -->
+	<div class="w5h1">
+		<h2 id="temp-section">Temporary Section</h2>
+		<p>The purpose of this website is to learn the basics of HTML, CSS and Javascript; afterwhich I will develop a better website.</p>
+	</div>
+
+	<!-- About section -->
+	<div class="w5h1">
+		<h2 id="about-section">About</h2>
+		<p>Johnson is a passionate rising level III Mechatronics Engineering Co-op student at McMaster University in constant pursuit of professional development and learning, currently doing co-op between his third and fourth academic years.</p>
+		<p>Johnson is working at General Motors as a Vehicle Dynamics Control System Co-op. He is also a Driver Controls member of McMaster Baja SAE Racing, former Educational Research Assistant at McMaster University, former Summer Electrical Assistant at ATS Test, and two-time former Systems Integrator co-op at ATS Automation.</p>
+		<p>Johnson enjoys getting involved in the engineering student community. He is an engineering mentor, an engineering welcome week representative, a DeltaHacks logistics executive, Mechatronics Society merchandise coordinator and an MES social committee member.</p>
+	</div>
+
 	<!-- Resume section -->
-	<div class="section">
+	<div class="w5h1">
+		<h2 id="resume-section">Resume</h2>
 		<p>Download my resume</p>
 	</div>
 
 	<!-- What section -->
-	<div id="what">
-		<div id="elevator">
-			<p>This is the first sentence of my elevator pitch</p>
-		</div>
-		
+	<div class="w5h1">
 		<!-- Education section -->
 		<div class="section">
-			<h2>Education</h2>
+			<h2 id="education-section">Education</h2>
+
+			<div id="elevator">
+				<p>This is the first sentence of my elevator pitch</p>
+			</div>
+
 			<h3>Bachelor of Engineering, Mechatronics Engineering, Level III</h3>
 			<h4>McMaster University</h4>
 			<p>cGPA: 3.96/4.00</p>
@@ -185,7 +259,7 @@
 
 		<!-- Experience Section -->
 		<div class="section">
-			<h2>Experience</h2>
+			<h2 id="experience-section">Experience</h2>
 			
 			<div id="elevator">
 				<p>This is the second sentence of my elevator pitch</p>
@@ -243,7 +317,7 @@
 
 		<!-- Projects Section -->
 		<div class="section">
-			<h2>Projects</h2>
+			<h2 id="projects-section">Projects</h2>
 			
 			<div id="elevator">
 				<p>This is the third sentence of my elevator pitch</p>
@@ -316,7 +390,7 @@
 
 		<!-- Volunteering Section -->
 		<div class="section">
-			<h2>Volunteering</h2>
+			<h2 id="volunteering-section">Volunteering</h2>
 
 			<div id="elevator">
 				<p>This is the fourth sentence of my elevator pitch</p>
@@ -366,7 +440,11 @@
 		</div>
 	</div>
 
-
+	<!-- Contact Section -->
+	<div class="w5h1">
+		<h2 id="connect-section">Coffee Connect</h2>
+		<p>Let's get in touch and chat! Fill out the form below or contact me at firstlast@domain.com.</p>
+	</div>
 
 
 
