@@ -2,6 +2,13 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">	
+	    <!-- OPTIONAL: description -->
+	    <meta name="description" content="Johnson's website">
+	    <!-- OPTIONAL: author -->
+	    <meta name="author" content="Johnson">
+	    <!--<link rel="shortcut icon" href="favicon.ico">
+	    <link rel="apple-touch-icon" href="icon.png" />-->
 	<title>Johnson Qu</title>
 	<style>
 		/* Whole site */
@@ -49,6 +56,13 @@
 			font-size: 20px;
 			line-height: 1.5em;
 		}
+		body{
+			background-color: rgb(240,240,240);
+		}
+		button{
+			font-family: Open Sans, sans-serif;
+			font-size: 1.25em;
+		}
 		.w5h1{
 			position: relative;
 			top: 0px;
@@ -56,6 +70,7 @@
 			margin-top: 50px;
 			border: 10px solid pink;
 			padding: 15px;
+			background-color: rgb(255,255,255);
 		}
 		.section{
 			margin: 20px;
@@ -111,6 +126,14 @@
 			color: white;
 			font-size: 30px;
 			margin-bottom: 0px;
+		}
+
+		/* Resume section */
+		#resume-download{
+			margin: auto;
+			border: 10px solid rgb(253,213,177);
+			padding: 15px;
+			text-align: center;
 		}
 
 		/* What section */
@@ -213,7 +236,12 @@
 	<!-- Resume section -->
 	<div class="w5h1">
 		<h2 id="resume-section">Resume</h2>
-		<p>Download my resume</p>
+		<!--<p>Download my resume</p>-->
+		<div id="resume-download">
+			<form method="get" action="ref/resume.pdf" target="_blank">
+			   <button type="submit">Download my Resume</button>
+		</div>
+		</form>
 	</div>
 
 	<!-- What section -->
@@ -442,6 +470,9 @@
 
 	<!-- Contact Section -->
 	<div class="w5h1">
+		<div id="elevator">
+			<p>This is the fifth sentence of my elevator pitch.</p>
+		</div>
 		<h2 id="connect-section">Coffee Connect</h2>
 		<p>Let's get in touch and chat! Fill out the form below or contact me at firstlast@domain.com.</p>
 	</div>
